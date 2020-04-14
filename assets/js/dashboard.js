@@ -1,53 +1,45 @@
-/* globals Chart:false, feather:false */
+$(document).ready(function () {
 
-(function () {
-  'use strict'
 
-  feather.replace()
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
 
-  // Graphs
-  var ctx = document.getElementById('myChart')
-  // eslint-disable-next-line no-unused-vars
-  var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday'
-      ],
-      datasets: [{
-        data: [
-          15339,
-          21345,
-          18483,
-          24003,
-          23489,
-          24092,
-          12034
-        ],
-        lineTension: 0,
-        backgroundColor: 'transparent',
-        borderColor: '#007bff',
-        borderWidth: 4,
-        pointBackgroundColor: '#007bff'
-      }]
-    },
-    options: {
-      scales: {
-        yAxes: [{
-          ticks: {
-            beginAtZero: false
-          }
-        }]
-      },
-      legend: {
-        display: false
-      }
+    function checkMenu(){
+    var screen = findBootstrapEnvironment();
+
+    if(screen == "md" ||  screen == "sm" || screen == "xs") {
+      $('#sidebar').addClass('active');
+      $('#content').addClass('active');
+    } else {
+      $('#sidebar').removeClass('active');
+      $('#content').removeClass('active');
     }
-  })
-}())
+}
+
+checkMenu();
+$(window).on('resize', checkMenu);
+
+});
+
+function findBootstrapEnvironment() {
+    let envs = ['xs', 'sm', 'md', 'lg', 'xl'];
+
+    let el = document.createElement('div');
+    document.body.appendChild(el);
+
+    let curEnv = envs.shift();
+
+    for (let env of envs.reverse()) {
+        el.classList.add(`d-${env}-none`);
+
+        if (window.getComputedStyle(el).display === 'none') {
+            curEnv = env;
+            break;
+        }
+    }
+
+    document.body.removeChild(el);
+    return curEnv;
+}
