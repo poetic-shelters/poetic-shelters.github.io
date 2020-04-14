@@ -2,7 +2,7 @@
             Living in Sin
   author: Adrienne Rich
   place: Santa Cruz, CA
-  image: "1.png"
+  image: "assets/imgs/1.png"
   filter: sw
   poem: She had thought the studio would keep itself;<br>
         no dust upon the furniture of love.<br>
@@ -35,7 +35,7 @@
             The Cabbage
   author: Ruth Stone
   place: Ripton, VT
-  image: "2.png"
+  image: "assets/imgs/2.png"
   filter: ne
   poem: You have rented an apartment.<br>
         You come to this enclosure with physical relief,<br>
@@ -56,7 +56,7 @@
             A Light Left On
   author: May Sarton
   place: York, ME
-  image: "3.png"
+  image: "assets/imgs/3.png"
   filter: ne
   poem: In the evening we came back<br>
         Into our yellow room,<br>

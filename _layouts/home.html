@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Amrita Mazumdar, Gregory Woolston, Claudia Castro Luna">
+  <meta name="generator" content="Jekyll v3.8.6">
+  <title>{{ page.title }}</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/dashboard/">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#FAFAF9">
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/dashboard.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+
+    <nav id="sidebar" >
+      <div class="sidebar-header">
+        <h3>Poetic Shelters</h3>
+        <span class="desc">scroll to read poems</span>
+      </div>
+
+      <figure class="figure" id="sidebar-logo">
+        <img src="assets/imgs/map.png" class="figure-img img-fluid" alt="Washington map" id="map-logo">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+      </figure>
+
+
+      <h4>About the Project</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      </p>
+
+      <h4>Acknowledgements</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ali
+      </p>
+
+      <h4>Contributors</h4>
+      <ul>
+        <li> Adrienne Rich, Santa Cruz</li>
+        <li> May Sarton, York</li>
+        <li> Ruth Stone, Ripton</li>
+      </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+      <button type="button" id="sidebarCollapse" class="btn btn-info">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <div class="container-fluid">
+
+
+      </div>
+
+      {% for poem in site.data.poems %}
+
+      <div class="card mb-3" style="">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="{{ poem.image }}" class="card-img" alt="Image accompanying {{ poem.title }}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ poem.title }}</h5>
+              <p class="card-text" id="card-author">{{ poem.author }}</small></p>
+              <p class="card-text" id="card-place">{{ poem.place }}</small></p>
+              <p class="card-text" id="card-poem">{{ poem.poem }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {% endfor %}
+
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+
+
+</body>
+</html>
