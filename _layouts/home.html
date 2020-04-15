@@ -25,31 +25,30 @@
 
     <nav id="sidebar" >
       <div class="sidebar-header">
-        <h3>Poetic Shelters</h3>
-        <span class="desc">scroll to read poems</span>
+        <h1>Poetic Shelters</h1>
+        <p class="tagline">documenting home in COVID-19</p>
       </div>
 
       <figure class="figure" id="sidebar-logo">
         <img src="assets/imgs/map.png" class="figure-img img-fluid" alt="Washington map" id="map-logo">
-        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        <figcaption class="figure-caption"><div align="right"><i>poems organized by region</i></div></figcaption>
       </figure>
 
 
-      <h4>About the Project</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      <h2>About the Project</h2>
+      <p class="sidebar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer justo orci, finibus eu hendrerit sit amet, tempor at nisl. Nulla fermentum eros ac purus gravida, eu mattis risus bibendum. Fusce eu dolor gravida, maximus tellus a, mollis nibh. In aliquam tristique metus, et porta massa congue a. Donec blandit elit nec ullamcorper tempus. Fusce suscipit ipsum id odio viverra tristique.
       </p>
 
-      <h4>Acknowledgements</h4>
-      <p>
+      <h2>Acknowledgements</h2>
+      <p class="sidebar">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ali
       </p>
 
-      <h4>Contributors</h4>
-      <ul>
-        <li> Adrienne Rich, Santa Cruz</li>
-        <li> May Sarton, York</li>
-        <li> Ruth Stone, Ripton</li>
-      </ul>
+      <h2>Contributors</h2>
+
+      <p class="sidebar">
+      Click here to view index of poets.
+      </p>
 
     </nav>
 
@@ -74,8 +73,8 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">{{ poem.title }}</h5>
-              <p class="card-text" id="card-author">{{ poem.author }}</small></p>
-              <p class="card-text" id="card-place">{{ poem.place }}</small></p>
+              <p class="card-text" id="card-author">{{ poem.author }}</p>
+              <p class="card-text" id="card-place">{{ poem.place }}</p>
               <p class="card-text" id="card-poem">{{ poem.poem }}</p>
             </div>
           </div>
