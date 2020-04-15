@@ -2,8 +2,6 @@
 layout: home
 ---
 
-<!-- Sidebar  -->
-
 <nav id="sidebar" >
   <div class="sidebar-header">
     <h1>Poetic Shelters</h1>
@@ -25,45 +23,11 @@ layout: home
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ali
   </p>
 
-  <h2>Contributors</h2>
-
-  <p class="sidebar">
-  <a href="contributors.html">Click here to view index of poets.</a>
-  </p>
 
 </nav>
 
-<!-- Page Content  -->
 <div id="content">
-  <button type="button" id="sidebarCollapse" class="btn btn-info">
-    <i class="fa fa-bars"></i>
-  </button>
 
-  <div class="container-fluid">
-
-
-  </div>
-
-  {% for poem in site.data.poems %}
-
-  <div class="card mb-3" style="">
-    <div class="row no-gutters">
-      <div class="col-md-4">
-        <img src="{{ poem.image }}" class="card-img" alt="Image accompanying {{ poem.title }}">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">{{ poem.title }}</h5>
-          <p class="card-text" id="card-author">{{ poem.author }}</p>
-          <p class="card-text" id="card-place">{{ poem.place }}</p>
-          <p class="card-text" id="card-poem">{{ poem.poem }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  {% endfor %}
-
+  <h1>Contributors</h1> <br  />
 
 </div>
