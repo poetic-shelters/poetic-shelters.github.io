@@ -117,6 +117,54 @@ h3, h4, h5, h6 {
      width: calc(100% - 20px);
  }
 
+ a {
+     color: #0645AD;
+     text-decoration: none;
+ }
+
+ a:hover
+ {
+      color:#0645AD;
+      text-decoration:underline;
+ }
+
+ a.title {
+     color: #000;
+     text-decoration: none;
+ }
+
+ a.title:hover
+ {
+      color:#000;
+ }
+
+
+  /*
+   * Explanations
+   */
+
+div.explain {
+  width: 600px;
+  margin-left: 325px;
+  margin-top: 90px;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 14px;
+  letter-spacing: .01em;
+  line-height: 140%;
+}
+
+.blockquote {
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: .02em;
+    line-height: 160%;
+    margin-left: 25px;
+    border-left: 3px solid #E0E0E0;
+    padding-left: 10px;
+    font-size: 12px;
+}
 
  /*
   * Poem Cards
@@ -165,25 +213,4 @@ p.card-text#card-poem{
   width: 100%;
   height: 40vh;
   object-fit: cover;
-}
-
-a {
-    color: #0645AD;
-    text-decoration: none;
-}
-
-a:hover
-{
-     color:#0645AD;
-     text-decoration:underline;
-}
-
-a.title {
-    color: #000;
-    text-decoration: none;
-}
-
-a.title:hover
-{
-     color:#000;
 }
