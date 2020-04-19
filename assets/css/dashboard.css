@@ -29,7 +29,7 @@ body {
 }
 
  #sidebar {
-     width: 325px;
+     width: 300px;
      top: 0;
      left: 0;
      z-index: 999;
@@ -72,7 +72,7 @@ button#sidebarCollapse{
       z-index: 1000;}
 
  #sidebar.active {
-     margin-left: -325px;
+     margin-left: -300px;
  }
 
 h1 {
