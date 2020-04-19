@@ -2,19 +2,21 @@ $(document).ready(function () {
 
 
     $('#sidebarCollapse').on('click', function () {
-        $('#sidebar, #content').toggleClass('active');
+        $('#sidebar, #content, #sidebarCollapse').toggleClass('active');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
 
     function checkMenu(){
     var screen = findBootstrapEnvironment();
 
-    if(screen == "md" ||  screen == "sm" || screen == "xs") {
+    if( screen == "sm" || screen == "xs") {
       $('#sidebar').addClass('active');
       $('#content').addClass('active');
+      $('#sidebarCollapse').addClass('active');
     } else {
       $('#sidebar').removeClass('active');
       $('#content').removeClass('active');
+      $('#sidebarCollapse').removeClass('active');
     }
 }
 

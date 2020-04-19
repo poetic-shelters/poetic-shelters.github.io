@@ -42,23 +42,34 @@ body {
 }
 
  .btn-info{
-   background-color:  #E0E0E0;
-   border-color: #E0E0E0;
-   color: #000;
+   border-color:  #000;
+   background-color: #000;
+   color: #fff;
  }
 
- .btn-info:hover {
-   background-color: #E0E0E0;
-   border-color: #000;
-   border: 2px solid #000;
-  color: #000;
+ .btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle{
+   background-color: #000;
+   border-color:  #000;
 }
 
- button#sidebarCollapse{
+ .btn-info:hover {
+   background-color: #000;
+   color: #fff;
+   border: 2px solid #000;
+}
+
+ button#sidebarCollapse.active{
    margin-left: -50px;
    margin-top: -25px;
-   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
- }
+   background-color: #000;
+   color: #fff;
+}
+
+button#sidebarCollapse{
+      margin-left: -70px;
+      margin-top: -25px;
+      position: fixed;
+      z-index: 1000;}
 
  #sidebar.active {
      margin-left: -300px;
@@ -84,6 +95,12 @@ h2 {
 }
 
 p.sidebar {
+  font-size: 14px;
+  letter-spacing: .01em;
+  line-height: 140%;
+}
+
+p.par {
   font-size: 14px;
   letter-spacing: .01em;
   line-height: 140%;
@@ -143,11 +160,6 @@ h3, h4, h5, h6 {
    * Explanations
    */
 
-div.explain {
-  width: 600px;
-  margin-left: 325px;
-  margin-top: 90px;
-}
 
 li {
   margin: 10px 0;
