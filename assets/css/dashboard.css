@@ -166,3 +166,24 @@ p.card-text#card-poem{
   height: 40vh;
   object-fit: cover;
 }
+
+a {
+    color: #0645AD;
+    text-decoration: none;
+}
+
+a:hover
+{
+     color:#0645AD;
+     text-decoration:underline;
+}
+
+a.title {
+    color: #000;
+    text-decoration: none;
+}
+
+a.title:hover
+{
+     color:#000;
+}
