@@ -42,3 +42,41 @@ Any poems, observations, mini-essays of home are encouraged. A simple image, a c
   </p>
 
 </nav>
+
+<!-- Page Content  -->
+<div id="content">
+  <button type="button" id="sidebarCollapse" class="btn btn-info">
+    <i class="fa fa-bars"></i>
+  </button>
+
+  {% for poem in site.data.poems %}
+
+  {% assign mod = forloop.index | modulo: 4 %}
+
+  {% if mod == 1 %}
+  <div class="card mb-3" style="">
+    <div class="row no-gutters">
+      <div class="col-md-5">
+        <div class="card-body">
+          <h5 class="card-title">{{ poem.title }}</h5>
+          <p class="card-text" id="card-author">{{ poem.author }}</p>
+          <p class="card-text" id="card-place">{{ poem.place }}</p>
+          <p class="card-text" id="card-poem">{{ poem.poem }}</p>
+        </div>
+      </div>
+        <div class="col-md-5">
+          <img src="{{ poem.image }}" class="card-img" alt="Image accompanying {{ poem.title }}">
+        </div>
+        <div class="col-md-2">
+          </div>
+    </div>
+  </div>
+
+
+    {% endif %}
+
+
+    {% endfor %}
+
+
+  </div>

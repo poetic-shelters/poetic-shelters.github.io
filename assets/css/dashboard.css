@@ -181,6 +181,7 @@ li {
 
 .explain {
     margin-top: 10px;
+    margin-left: 20px;
 }
 
  /*
@@ -192,9 +193,9 @@ li {
   border: none;
 }
 
-
 .card-body {
   font-size: 12px;
+  margin-top: -10px;
 }
 
 .card-body p{
@@ -223,11 +224,13 @@ p.card-text#card-place{
 p.card-text#card-poem{
   font-family: 'Libre Baskerville', serif;
   letter-spacing: .02em;
-  line-height: 160%;
+  line-height: 170%;
 }
 
 .card-img{
   width: 100%;
-  height: 40vh;
+  height: 25vh;
   object-fit: cover;
+  border-radius:0px;
+  margin-top:96px;
 }

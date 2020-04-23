@@ -56,12 +56,7 @@ Any poems, observations, mini-essays of home are encouraged. A simple image, a c
   {% if mod == 1 %}
   <div class="card mb-3" style="">
     <div class="row no-gutters">
-      <div class="col-md-3">
-        <img src="{{ poem.image }}" class="card-img" alt="Image accompanying {{ poem.title }}">
-      </div>
-      <div class="col-md-2">
-        </div>
-      <div class="col-md-6">
+      <div class="col-md-5">
         <div class="card-body">
           <h5 class="card-title">{{ poem.title }}</h5>
           <p class="card-text" id="card-author">{{ poem.author }}</p>
@@ -69,8 +64,11 @@ Any poems, observations, mini-essays of home are encouraged. A simple image, a c
           <p class="card-text" id="card-poem">{{ poem.poem }}</p>
         </div>
       </div>
-      <div class="col-md-1">
-      </div>
+        <div class="col-md-5">
+          <img src="{{ poem.image }}" class="card-img" alt="Image accompanying {{ poem.title }}">
+        </div>
+        <div class="col-md-2">
+          </div>
     </div>
   </div>
 
