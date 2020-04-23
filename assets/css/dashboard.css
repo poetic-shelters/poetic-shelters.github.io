@@ -110,6 +110,7 @@ figcaption.figure-caption {
   font-size: 14px;
   color: #000;
   margin-bottom: 10px;
+  line-height: 140%;
 }
 
 h3, h4, h5, h6 {
@@ -176,6 +177,10 @@ li {
     border-left: 3px solid #E0E0E0;
     padding-left: 10px;
     font-size: 12px;
+}
+
+.explain {
+    margin-top: 10px;
 }
 
  /*
