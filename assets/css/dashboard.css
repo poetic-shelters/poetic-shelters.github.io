@@ -229,9 +229,17 @@ p.card-text#card-poem{
   line-height: 170%;
 }
 
-.card-img{
+.card-img#option1{
   width: 100%;
   height: 25vh;
+  object-fit: cover;
+  border-radius:0px;
+  margin-top:96px;
+}
+
+.card-img#option2{
+  width: 100%;
+  height: 35vh;
   object-fit: cover;
   border-radius:0px;
   margin-top:96px;
