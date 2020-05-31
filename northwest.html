@@ -75,7 +75,10 @@ Consider starting with <a href="prompts.html">these writing prompts</a>, and the
         </div>
       </div>
         <div class="col-md-5">
+          {% if poem.image == "" %}
+          {% else %}
           <img src="{{ poem.image }}" class="card-img" id="option1" alt="Image accompanying {{ poem.title }}">
+          {% endif %}
         </div>
         <div class="col-md-1">
           </div>
@@ -88,7 +91,10 @@ Consider starting with <a href="prompts.html">these writing prompts</a>, and the
       <div class="col-md-2">
       </div>
       <div class="col-md-4">
+        {% if poem.image == "" %}
+        {% else %}
         <img src="{{ poem.image }}" class="card-img" id="option2" alt="Image accompanying {{ poem.title }}">
+        {% endif %}
       </div>
       <div class="col-md-1">
       </div>
@@ -117,7 +123,10 @@ Consider starting with <a href="prompts.html">these writing prompts</a>, and the
         </div>
       </div>
       <div class="col-md-3">
+        {% if poem.image == "" %}
+        {% else %}
         <img src="{{ poem.image }}" class="card-img" id="option3" alt="Image accompanying {{ poem.title }}">
+        {% endif %}
       </div>
       <div class="col-md-3">
       </div>
@@ -130,7 +139,10 @@ Consider starting with <a href="prompts.html">these writing prompts</a>, and the
       <div class="col-md-3">
         </div>
       <div class="col-md-3">
+        {% if poem.image == "" %}
+        {% else %}
         <img src="{{ poem.image }}" class="card-img" id="option4" alt="Image accompanying {{ poem.title }}">
+        {% endif %}
       </div>
       <div class="col-md-1">
       </div>
@@ -144,6 +156,7 @@ Consider starting with <a href="prompts.html">these writing prompts</a>, and the
       </div>
     </div>
   </div>
+
 
   {% endif %}
   {% endif %}
